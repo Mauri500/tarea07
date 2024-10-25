@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/favicon_laive.jpeg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo">
+                <img src="img/logo_laive.png" alt="logo">
+            </div>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="video.html">Etiqueta Video</a></li>
+                <li><a href="video-fondo.html">Video fondo</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h2>LA ETIQUETA VIDEO</h2>
+            <article class="video_responsive">
+                <video src="video/vacas-comiendo-640x360.mp4" width="640" height="360" controls loop poster="img/vaca.png">
+                    <p>Lo sentimos, su navegador no puede reproducir video</p>
+                </video>
+            </article>
+            <h2>VIDEOS ALTERNATIVOS</h2>
+            <article class="video_responsive">
+                <video width="640" height="360" autoplay loop>
+                    <source src="video/vacas-comiendo-640x360.mp4" type="video/mp4">
+                    <source src="video/vacas-comiendo-1280x720.mkv" type="video/mkv">
+                    <img src="img/vaca.png" alt="Video no soportado">
+                    <p>Lo sentimos, su navegador no puede reproducir video</p>
+                </video>
+            </article>
+        </div>
+        <footer>
+            <address>
+                Santa Clara, Av. Nicolás de Piérola 601, Lima 15001<br>
+            </address>
+        </footer>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1:#007935;
+    --color2:#F2F2F2;
+    --color3:#FF0000;
+}
+main{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid var(--color1)
+}
+header{
+    background-color: var(--color1);
+    padding-left: 20px;
+}
+#logo{
+    width:130px;
+}
+#logo img{
+    width:100%
+}
+nav{
+    border: 1px solid black;  /*border en barra de navegación*/
+}
+#menu{ /*ordenamiento de elementos de la barra de navegación*/
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;  
+}
+#menu li{
+    margin: 2px /*separación de cada elemento*/
+}
+#menu li a{ /*contenido dentro de cada elemento en barra de navegación*/
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 5px;
+}
+#menu li a:hover{ /*efecto al pasar el mouse por encima*/
+    color: var(--color3);
+}
+h1{  /*Título principal encima de los videos*/
+    padding: 10px;
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    margin: 10px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+#videos{ /*Videos dentro de Section en Index*/
+    border: 1px solid black;
+    margin: 10px;
+    width: 70%;
+}
+.video_responsive{ /*Escalado y ordenamiento de los videos*/
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    height: 0;
+}
+aside{ /*Contenido al lado derecho dentro de Section en Index*/
+    width: 30%;
+    margin-top: 20px;
+    background-color: yellow;
+}
+aside img{ /*Imagen dentro de aside*/
+    width: 90%;
+}
+iframe,video{ /*Ordenamiento para los videos incorporados (Youtube y Vimeo)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fondo{ /*Fondo de la página web*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -100;
+}
+#contenido{ /*texto dentro de video-fondo*/
+    color: white;
+    font-size: 20px;
+}
+h1,h2,#video,aside,footer,#contenido{ /*Orden de los textos dentro de las etiquetas*/
+    text-align: center;
+    margin:5px;
+}
